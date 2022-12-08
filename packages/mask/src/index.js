@@ -184,6 +184,10 @@ export function formatMoney(input, delimiter = '.', thousands) {
             counter++
         }
 
+        if(input[0] === "-"){
+            return ("-" + output)
+        }
+
         return output
     }
 
